@@ -32,18 +32,19 @@ public class ListaDeCarreirasSteps{
     @Dado("digito no campo de busca {string}")
     public void digito_no_campo_de_busca(String string) {
         Configuracao.cssSelector("a[href='/br-pt/search/results']").click();
-        Configuracao.id("search-form-label").sendKeys(string);
+        Configuracao.id("search-form-label").sendKeys(string); 
     }
 
     @Dado("clico no botao procurar")
-    public void clico_no_botao_procurar() throws InterruptedException {
+    public void clico_no_botao_procurar()throws InterruptedException  {
         Configuracao.cssSelector("button[class='btn btn-primary col-xs-2']").click();
-        Thread.sleep(5000);
+        //Foi necessario implementar um refresh no browser devido problemas no tempo de retorno da busca
+        Configuracao.browser.navigate().refresh();
     }
 
     @Entao("devo encontrar vagas para programadores")
     public void devo_encontrar_vagas_para_programadores() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        assertTrue(Configuracao.cssSelectors(".search-results-container").size() > 0); 
+        Configuracao.fechar(); 
     }
 }
