@@ -1,6 +1,8 @@
 package io.cucumber.danilo.servicos;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
@@ -15,9 +17,24 @@ public class Configuracao {
         }
         
         browser.get(url);
+        browser.manage().window().maximize();
+
     }
 
     public static void fechar() {
         browser.close();
     }
+
+    public static WebElement cssSelector(String selector) {
+		return browser.findElement(By.cssSelector(selector));
+	}
+	
+	// public static List<WebElement> cssSelectors(String selector) {
+	// 	return browser.findElements(By.cssSelector(selector));
+	// }
+
+	public static WebElement id(String selector) {
+		return browser.findElement(By.id(selector));
+	}
+
 }
