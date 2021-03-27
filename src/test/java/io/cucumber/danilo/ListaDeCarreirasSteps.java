@@ -28,4 +28,22 @@ public class ListaDeCarreirasSteps{
         assertEquals(string, Configuracao.cssSelector(".page-title-long").getText()); 
         Configuracao.fechar();       
     }
+
+    @Dado("digito no campo de busca {string}")
+    public void digito_no_campo_de_busca(String string) {
+        Configuracao.cssSelector("a[href='/br-pt/search/results']").click();
+        Configuracao.id("search-form-label").sendKeys(string);
+    }
+
+    @Dado("clico no botao procurar")
+    public void clico_no_botao_procurar() throws InterruptedException {
+        Configuracao.cssSelector("button[class='btn btn-primary col-xs-2']").click();
+        Thread.sleep(5000);
+    }
+
+    @Entao("devo encontrar vagas para programadores")
+    public void devo_encontrar_vagas_para_programadores() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
 }
