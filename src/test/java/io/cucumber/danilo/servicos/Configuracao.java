@@ -25,6 +25,7 @@ public class Configuracao {
 
     public static void fechar() {
         browser.quit();
+        browser = null;
     }
 
     public static WebElement cssSelector(String selector) {
