@@ -1,5 +1,4 @@
 #language: pt
-@ignore
 
 Funcionalidade: Acessar a lista de carreiras da accenture
 
