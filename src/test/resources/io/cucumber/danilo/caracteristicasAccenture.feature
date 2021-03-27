@@ -7,4 +7,4 @@ Funcionalidade: Informacoes sobre a Accenture
               E fechar o cookie
               E clico no menu sobre a accenture
               E clico no item do menu sobre a accenture
-             Entao devo ver o destaque em "Nosso proposito"
+             Entao devo ver o destaque em "Nosso propósito:"
