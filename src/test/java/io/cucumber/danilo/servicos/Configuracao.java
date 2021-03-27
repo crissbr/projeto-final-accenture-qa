@@ -38,6 +38,19 @@ public class Configuracao {
 
 	public static WebElement id(String selector) {
 		return browser.findElement(By.id(selector));
-	}
+    }
+    public static String numero(String qualString) {
+        
+        if (qualString.equals("Cookies estritamente necessárias")) {
+            return "1";
+        } else if (qualString.equals("Cookies Analíticos de Primeira Parte")) {
+            return "2";
+        } else if (qualString.equals("Cookies de Desempenho e Cookies Funcionais")) {
+            return "3";
+        } else {
+            return "4";
+        }
+        
+    }
 
 }

@@ -17,4 +17,9 @@ public class CompartilhadoSteps {
         Configuracao.cssSelector("button[class='onetrust-close-btn-handler onetrust-close-btn-ui banner-close-button ot-close-icon']").click();
     }
 
+    @Dado("clico em configuracoes de cookie")
+    public void clico_em_configuracoes_de_cookie() {
+        Configuracao.cssSelector("button[class='cookie-setting-link']").click();
+    }
+
 }
