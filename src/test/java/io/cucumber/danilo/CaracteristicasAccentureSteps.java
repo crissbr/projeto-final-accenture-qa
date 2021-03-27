@@ -25,7 +25,7 @@ public class CaracteristicasAccentureSteps{
     @Entao("devo ver o destaque em {string}")
     public void devo_ver_o_destaque_em(String string) throws InterruptedException  {
         Thread.sleep(5000);
-        assertEquals(string, Configuracao.cssSelector("h3.sectionTitle").getText()); 
+        assertEquals(string, Configuracao.cssSelector(".sectionTitle").getText()); 
         Configuracao.fechar();       
     }
 
