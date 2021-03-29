@@ -15,6 +15,10 @@ public class Configuracao {
     public static void abrir(String url) {
         if (browser == null) {
             System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
+            if (null==browser) {
+                System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
+            }
+            
             browser = new ChromeDriver();
         }
         

@@ -22,6 +22,6 @@ public class ListaDeServicosSteps{
     public void devo_ver_os_servicos_abaixo(List<String> valores) {
 
     assertEquals(valores.toString(), "["+Configuracao.cssSelectors(".no-l3").get(1).getText().replace("\n", ", ")+"]");
-       Configuracao.fechar();
+    Configuracao.fechar();
     }
 }
