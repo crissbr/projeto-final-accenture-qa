@@ -57,8 +57,6 @@ public class Configuracao {
             return "3";
         } else {
             return "4";
-        }
-        
+        }      
     }
-
 }
