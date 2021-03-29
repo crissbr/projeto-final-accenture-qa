@@ -14,12 +14,16 @@ public class Configuracao {
 
     public static void abrir(String url) {
         if (browser == null) {
-            System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
-            if (null==browser) {
+            try {
+                System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
+                browser = new ChromeDriver();
+              } catch (Exception e) {
                 System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
-            }
+                browser = new ChromeDriver();
+              }
             
-            browser = new ChromeDriver();
+                        
+            
         }
         
         browser.get(url);
