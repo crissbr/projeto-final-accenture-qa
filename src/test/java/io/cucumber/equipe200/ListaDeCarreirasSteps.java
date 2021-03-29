@@ -1,11 +1,11 @@
-package io.cucumber.danilo;
+package io.cucumber.equipe200;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.By;
 
-import io.cucumber.danilo.servicos.Configuracao;
+import io.cucumber.equipe200.servicos.Configuracao;
 import io.cucumber.java.pt.*;
 import static org.junit.Assert.*;
 

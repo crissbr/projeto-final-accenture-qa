@@ -1,8 +1,7 @@
-package io.cucumber.danilo;
+package io.cucumber.equipe200;
 
+import io.cucumber.equipe200.servicos.Configuracao;
 import io.cucumber.java.pt.*;
-
-import io.cucumber.danilo.servicos.Configuracao;
 
 public class CompartilhadoSteps {
     @Dado("que eu estou no site da accenture")

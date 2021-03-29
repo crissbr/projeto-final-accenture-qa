@@ -1,4 +1,4 @@
-package io.cucumber.danilo.servicos;
+package io.cucumber.equipe200.servicos;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ public class Configuracao {
 
     public static void abrir(String url) {
         if (browser == null) {
-            System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
             browser = new ChromeDriver();
         }
         
