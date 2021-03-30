@@ -20,9 +20,7 @@ public class Configuracao {
               } catch (Exception e) {
                 System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
                 browser = new ChromeDriver();
-              }
-            
-                        
+              }                   
             
         }
         

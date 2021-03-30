@@ -183,3 +183,63 @@ mvnw.cmd clean
 ```bash
 ./test.bat
 ```
+## Estrutura de arquivos
+```
+  driver 
+
+      |-- chromedriver -- Este é o arquivo do selenium webdriver, substitua este arquivo com a versão da sua máquina
+
+  mvnw
+
+  mvnw.cmd
+
+  pom.xml
+
+  src
+
+    |-- test
+
+    |  |-- java
+
+    |  |  |-- io
+
+    |  |  |  |-- cucumber
+
+    |  |  |  |  |-- equipe200
+
+    |  |  |  |  |  |-- servicos -- Pasta para colocar Classes em Java para usar nos arquivos Steps
+    
+    |  |  |  |  |  |  |-- Configuracao -- Conjunto de classes em java para facilitar o processo das Steps
+
+    |  |  |  |  |  |-- CaracteristicasAccentureSteps.java -- Passos escritos em java com selenium abrindo o site e testando a aplicação
+ 
+    |  |  |  |  |  |-- CompartilhadoSteps.java -- Passos escritos em java com selenium em comum entre os cenários
+    
+    |  |  |  |  |  |-- ConfigurarCookiesSteps.java -- Passos escritos em java com selenium abrindo o site e testando a aplicação
+    
+    |  |  |  |  |  |-- ListaDeCarreirasSteps.java -- Passos escritos em java com selenium abrindo o site e testando a aplicação
+    
+    |  |  |  |  |  |-- ListaDeServicosSteps.java -- Passos escritos em java com selenium abrindo o site e testando a aplicação
+
+    |  |  |  |  |  |-- RunCucumberTest.java -- Arquivo que configura a inicialização do Java test
+
+    |  |-- resources
+
+    |  |  |-- io
+
+    |  |  |  |-- cucumber
+
+    |  |  |  |  |-- equipe200
+
+    |  |  |  |  |  |-- caracteristicasAccenture.feature -- Gherkin com os cenários de teste de acordo com o meu cliente
+
+    |  |  |  |  |  |-- configurarCookie.feature -- Gherkin com os cenários de teste de acordo com o meu cliente
+
+    |  |  |  |  |  |-- listaDeCarreiras.feature -- Gherkin com os cenários de teste de acordo com o meu cliente
+
+    |  |  |  |  |  |-- listaDeServicos.feature -- Gherkin com os cenários de teste de acordo com o meu cliente
+
+  test.bat -- Arquivo para rodar teste no Windows
+  
+  test.sh -- Arquivo para rodar teste no Unix
+```
