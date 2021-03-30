@@ -130,7 +130,7 @@ Gerenciador de dependências para desenvolvimento da aplicação <br>
 Framework responsável por traduzir uma linguagem humana em código Java <br>
 
 :heavy_check_mark: <b> [Selenium](https://www.selenium.dev/) </b><br>
-Framework responsável por fazer a integração do código Java com a linguagem Gurking(Cucumber), abrindo o browser e fazendo o teste de comportamento <br>
+Framework responsável por fazer a integração do código Java com a linguagem Gherkin(Cucumber), abrindo o browser e fazendo o teste de comportamento <br>
 
 <br>
 
