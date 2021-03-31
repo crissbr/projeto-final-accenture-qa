@@ -17,7 +17,7 @@ Integrantes:
 - [Cristiane Cordeiro Silva](https://github.com/crissbr)
 - [Magali da Silva](https://github.com/dsmag)
 - [Natália Belo](https://github.com/natbelo)
-- [Patrícia Sampaio Verônica Bertozzi](https://github.com/patysiq)
+- [Patrícia Sampaio](https://github.com/patysiq)
 - [Veronica Bertozzi](https://github.com/VeronicaBertozzi)
 
 <br>
